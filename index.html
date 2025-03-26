@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pranay - Personal Portfolio</title>
+  <title>Shreeji Patel - Personal Portfolio</title>
 
   <!--
     - favicon
@@ -30,153 +30,52 @@
       <div class="modal project-1">
         <span class="close" onclick="closeAllOpenModals()">&times;</span>
         <div class="content">
-          <b>IAM Group creation with IAM policy attached and logged in DynamoDB</b> 
-          <br>
-          <br>
-          <p>Create and IAM user and attach him/her to an IAM user group, trigger a lambda function to log the details of the
-            IAM user in a DynamoDB table, the task was automated using boto3 script </p>
-            <br>
-          <ul>
-            <li>1. Create IAM policy following the restrictive policy </li>
-            <br>
-            <li>2. Assign the IAM policies to IAM groups.</li>
-            <br>
-            <li>3. Add IAM users to the group.</li>
-            <br>
-            <li>4. Writing a lambda function to be triggered whenever a user is created.</li>
-            <br>
-            <li>Using the lambda function to log the details of the IAM user in a DynamoDB table.</li>
-            <br>
-            <li>5. Automate the process using python boto script</li>
-          </ul>
+        
+          <div class="pdf-details">
+            <h4>Documentation Details:</h4>
+            <p>Red Team Report - Comprehensive security assessment and penetration testing documentation including:</p>
+            <ul>
+              <li>Vulnerability analysis</li>
+              <li>Security testing methodologies</li>
+              <li>Risk assessment findings</li>
+              <li>Recommendations for security improvements</li>
+            </ul>
+          </div>
+          <a href="./assets/pdfs/Red Team report.pdf" class="project-pdf-btn" target="_blank">View Documentation</a>
         </div>
       </div>
   
       <div class="modal project-2">
         <span class="close" onclick="closeAllOpenModals()">&times;</span>
         <div class="content">
-          <b>Postgres Container Setup </b> 
-          <br>
-          <br>
-          <p>Setup a Postgres container to log files into a Postgres database.</p>
-          <br>
-          <ul>
-            <li>1. Setup Postgres Container </li>
-            <br>
-            <li>2. Write Dockerfile for Postgres container to communicate with frontend.</li>
-            <br>
-            <li>3. Setup NodeJS as a server.</li>
-          </ul>
+          <div class="pdf-details">
+            <h4>Documentation Details:</h4>
+            <p>Solution Proposal - Detailed technical documentation including:</p>
+            <ul>
+              <li>System architecture design</li>
+              <li>Implementation steps</li>
+              <li>Configuration details</li>
+              <li>Testing procedures</li>
+            </ul>
+          </div>
+          <a href="./assets/pdfs/Solution Proposal.pdf" class="project-pdf-btn" target="_blank">View Documentation</a>
         </div>
       </div>
 
       <div class="modal project-3">
         <span class="close" onclick="closeAllOpenModals()">&times;</span>
         <div class="content">
-          <b>Setup AWS Route53 for DNS services</b> 
-          <br>
-          <br>
-          <p>Setup AWS Route 53 for DNS services.</p>
-          <br>
-          <ul>
-            <li>1. Setup Geolocation routing policy to tackle latency. </li>
-            <br>
-            <li>2. Setup Elastic IP address.</li>
-            <br>
-            <li>3. Setup Simple routing policy for our EC2 instances.</li>
-            <br>
-            <li>4. Setup weigted routing policy for the distribution of traffic over our subdomain and primary servers.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="modal project-4">
-        <span class="close" onclick="closeAllOpenModals()">&times;</span>
-        <div class="content">Here is my modal text 4</div>
-      </div>
-      <div class="modal project-5">
-        <span class="close" onclick="closeAllOpenModals()">&times;</span>
-        <div class="content">
-          <b>Cross region S3 replication</b> 
-          <br>
-          <br>
-          <p>Create a python script that will trigger cross-region replication for existing objects.</p>
-          <br>
-          <ul>
-            <li>1. Create two S3 buckets in 2 different regions with cross-region replication. </li>
-            <br>
-            <li>2. Attach bucket policies to the S3 bucket.</li>
-            <br>
-            <li>3. Give IAM role permission.</li>
-            <br>
-          </ul>
-        </div>
-      </div>
-      <div class="modal project-6">
-        <span class="close" onclick="closeAllOpenModals()">&times;</span>
-        <div class="content">
-          <b>Setup VPC flow logs querying with S3 and SQS.</b> 
-          <br>
-          <br>
-          <p>I was responsible for streaming the VPC flow logs in an S3 bucket and then query through them using dead letter queues.</p>
-          <br>
-          <ul>
-            <li>1. Saving VPC flow logs in an S3 bucket. </li>
-            <br>
-            <li>2. Query requests filtered down to a security group.</li>
-            <br>
-            <li>3. Query for generating a list of IP addresses.</li>
-            <br>
-            <li>4. Setup user-pool authentication for API Gateway.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal project-7">
-        <span class="close" onclick="closeAllOpenModals()">&times;</span>
-        <div class="content">
-          <b>Multi-Stage Deployment for iOS Application</b> 
-          <br>
-          <br>
-          <p>Write a multi-stage deployment YAML file for Azure DevOps YAML file.</p>
-          <br>
-          <ul>
-            <li>1. Write a YAML file for BUILD, TEST and PROD environment.</li>
-            <br>
-            <li>2. Setting up tasks specific to iOS like installing AppleProvisioner and AppleCertManager.</li>
-            <br>
-            <li>3. Setup Pull Request triggers.</li>
-            <br>
-            <li>4. Integrate GitHub along with AzureDevOps pipeline for releases.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal project-8">
-        <span class="close" onclick="closeAllOpenModals()">&times;</span>
-        <div class="content">Here is my modal text 8</div>
-      </div>
-      <div class="modal project-9">
-        <span class="close" onclick="closeAllOpenModals()">&times;</span>
-        <div class="content">
-          <b>Failover sequence using Lambda for Database Instances</b> 
-          <br>
-          <br>
-          <p>Write a lambda function to trigger when a MySQL database is not responding to fire up the new database server
-            as a backup. We used 2 lambda function for this task one is the checker function which will check if the MySQL
-            instance is running every minute which is scheduled using CloudWatch Events, the other function is used to shift
-            the traffic from the primary Database instance to the secondary instance, I used the socket and private IP of the
-            database to check the availability of the database.</p>
-          <br>
-          <ul>
-            <li>1. Write a lambda function to trigger when a MySQL database is not responding.</li>
-            <br>
-            <li>2. Write a lambda function to change the instance.</li>
-            <br>
-            <li>3. Setup the recovery database on our EC2 instances</li>
-            <br>
-            <li>4. Setup IAM roles and policies for Lambda to communicate with AWS System Manager.</li>
-            <br>
-            <li>5. Setup StepFunction along with Cloudwatch for lambda function to be triggered every 10 seconds.</li>
-          </ul>
+          <div class="pdf-details">
+            <h4>Documentation Details:</h4>
+            <p>Blue Team Report - Security implementation and monitoring documentation including:</p>
+            <ul>
+              <li>Security controls implementation</li>
+              <li>Monitoring setup details</li>
+              <li>Incident response procedures</li>
+              <li>Security best practices</li>
+            </ul>
+          </div>
+          <a href="./assets/pdfs/Team Nu- Blue Team Report.pdf" class="project-pdf-btn" target="_blank">View Documentation</a>
         </div>
       </div>
 
@@ -195,13 +94,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Pranay Singh Parihar" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Shreeji Patel" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Pranay Singh Parihar">Pranay Singh Parihar</h1>
+          <h1 class="name" title="Shreeji Patel">Shreeji Patel</h1>
 
-          <p class="title">Associate Product Manager</p>
+          <p class="title">Junior Security Analyst</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -227,7 +126,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:pranaysparihar@gmail.com" class="contact-link">pranaysparihar@gmail.com</a>
+              <a href="mailto:shreejisp24@gmail.com" class="contact-link">shreejisp24@gmail.com</a>
             </div>
 
           </li>
@@ -241,21 +140,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+917568591982" class="contact-link">+91-7568591982</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1999-11-15">November 15, 1999</time>
+              <a href="tel:+19059236117" class="contact-link">+1 (905)-923-6117</a>
             </div>
 
           </li>
@@ -269,7 +154,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Hyderabad, Telangana, India</address>
+              <address>252 Gravel ridge trail, Kitchener, ON, N2E0C5</address>
             </div>
 
           </li>
@@ -323,23 +208,19 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button type="button" class="navbar-link active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button type="button" class="navbar-link" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button type="button" class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button type="button" class="navbar-link" data-nav-link>Contact</button>
           </li>
 
         </ul>
@@ -362,17 +243,14 @@
 
         <section class="about-text">
           <p>
-            I'm an avid follower of all things product, been working on my own product for some time, and would love to chat 
-            about it with anyone interested. I  have working experience of B2C and B2B business environment as well, on all 
-            the major aspects of a product from engineering, UX to marketing and satisfied stakeholders.  
+            I am a Junior Security Analyst with a strong foundation in cybersecurity and a passion for protecting digital assets. 
+            My expertise includes operating system knowledge, firewall and VPN configuration management, and incident response handling.
           </p>
 
           <p>
-            My varied experiences, and entrepreneurially minded focus could be just what you are looking for. 
-            My main goal is a simplistic product with minimalism at it's core, sleek, modern-looking designs
-            for every kinf of audience. <br>
-            In my free time I like to read a lot of books, play a ton of badminton, hit the gym everyday, proud collector of coffee beans
-            and play the drums, maybe write some poetry so if any of these also sound interesting I would love to pick your brain.
+            I am currently pursuing my Post Graduate degree in Cybersecurity at St. Clair College of Applied Arts and Technology, 
+            expected to complete in August 2024. With a Bachelor of Science in Computer Science background, I combine theoretical 
+            knowledge with practical skills to address modern security challenges.
           </p>
         </section>
 
@@ -387,18 +265,17 @@
 
           <ul class="service-list">
 
-
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Security icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Product Mangement</h4>
+                <h4 class="h4 service-item-title">Security Analysis</h4>
 
                 <p class="service-item-text">
-                  Innovative minded gradaute with an entrepreneurial zeal.
+                  Analyzing and monitoring network performance, implementing security measures, and performing risk analyses.
                 </p>
               </div>
 
@@ -407,14 +284,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="Incident response icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">DevOps Engineer</h4>
+                <h4 class="h4 service-item-title">Incident Response</h4>
 
                 <p class="service-item-text">
-                  Years of experience working on varied large scale applications. 
+                  Developing and implementing comprehensive incident response plans for cybersecurity events.
                 </p>
               </div>
 
@@ -423,15 +300,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="Network security icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Project Manager</h4>
+                <h4 class="h4 service-item-title">Network Security</h4>
 
                 <p class="service-item-text">
-                  Project Manager with expereince in leading a multi-cultural team. 
+                  Firewall and VPN configuration management, network monitoring, and security implementation.
                 </p>
               </div>
 
@@ -440,15 +316,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="Technical skills icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Product Design</h4>
+                <h4 class="h4 service-item-title">Technical Skills</h4>
 
                 <p class="service-item-text">
-                  Worked with wireframing and UI/UX elements and it's impact on a product 
+                  Proficient in MS Office Suite, operating systems, and continuous learning of new technologies.
                 </p>
               </div>
 
@@ -457,150 +332,6 @@
           </ul>
 
         </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Soubhik Mazumdar" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Soubhik Mazumdar</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I know Pranay for 6 years now. He is maverick by all means. A profit-minded person, if he takes a deal to serve a client then he'll make sure that both the parties get what they wanted at the end. 
-                    A live-hearted person who makes the environment filled with humor. Expert in taking risks for an assignment. The best person for an organization who has an Adhocracy culture.
-                    He has made himself well versed with cloud computing. The amount of knowledge he has specifically in AWS is remarkable. Definitely, any organization with this requirement will profit from his inclusion.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="M Chand" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>M Chand</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Pranay worked with me on setting up a multistage ios application deployment on Azure Devops with GitHub integration, 
-                    he has good understanding of how the cloud works. He is calm, friendly, good listener and extremely dedicated to his work. 
-                    I highly recommend working with him to get the best out of everything.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
 
         <!--
@@ -615,33 +346,29 @@
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
+                <img src="./assets/images/amul.jpeg" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-2-color.jpg" alt="client logo">
+                <img src="./assets/images/startech.jpeg" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
+                <img src="./assets/images/walmart.jpeg" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
+                <img src="./assets/images/sucro.jpeg" alt="client logo">
               </a>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
+            
 
 
 
@@ -679,28 +406,25 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">VIT University, Chennai</h4>
+              <h4 class="h4 timeline-item-title">Post Graduate: Cybersecurity</h4>
+              <h7 class="h4 timeline-item-title">St. Clair College of Applied Arts and Technology</h7>
 
-              <span>2017 — 2021</span>
+              <span>2023 — 2024</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Expected completion: August 2024
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">FIITJEE Junior College</h4>
+              <h4 class="h4 timeline-item-title">Bachelor of Science (Computer Science)</h4>
 
-              <span>2015 — 2017</span>
+              <span>2019 — 2023</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Completed undergraduate studies in Computer Science with focus on security fundamentals.
               </p>
 
             </li>
@@ -723,111 +447,52 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">CEO</h4>
-              <h7 class="h4 timeline-item-title">ArtUp</h7>
+              <h4 class="h4 timeline-item-title">Junior Security Analyst</h4>
+              <h7 class="h4 timeline-item-title">Starttech-IT Solutions, Ahmedabad</h7>
 
-              <span>January 2022 — Present</span>
+              <span>February 2023 — September 2023</span>
 
               <p class="timeline-text">
-                1. Performed professional market research to identify the target market, marketconditions, customer behavior, industry trends, and competition. <br>
-                2. Uncovered new opportunities and significantly expanded market presence. <br>
-                3. Created interaction strategies that helped, developing navigation and flow, designing wireframes and interactive prototypes, organizing content, and
-                advocating for the needs and goals of real users. Conceive, plan and lead the development of high-end, useful digital products.<br>
-                4. Pitch to potential individual investors and venture capitalists. <br>
-                5. Maintaining the longer-term feature roadmap, attending planning meetings, and ensuring roadmap items feed into upcoming releases. <br>
-                6. Build out and maintain our Cloud product roadmap and drive planning efforts with other architects on the team to determine the features <br>
-                   that need to be on the roadmap and targeted timing of delivery. <br>
-                7. Setup Key Performance Indicators catered to our product.   <br>
-                8. Assigning OKRs to the team, for weekly and bi-weekly goals. <br>
-                9. Spearheaded all branding across the web and offline meetups. <br>
-                10.Facilitated a clear and concise business plan for revenue growth, and user interaction with multiple studio platforms.
+                1. Analyzing and monitoring network performance<br>
+                2. Implemented security measures to reduce threats and damage related to cyber attacks<br>
+                3. Performed risk analysis to identify appropriate security countermeasures<br>
+                4. Collaborated with IT team members to develop comprehensive incident response plans for handling cybersecurity events
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">DevOps Engineer</h4>
-              <h7 class="h4 timeline-item-title">NCR Corporation</h7>
+              <h4 class="h4 timeline-item-title">Customer Service Associate</h4>
+              <h7 class="h4 timeline-item-title">Walmart, Burlington, ON</h7>
 
-              <span>December 2021 — Present</span>
+              <span>2023</span>
 
               <p class="timeline-text">
-                1. Worked on groovy script to invoke functions on remote server for Jenkins pipeline. <br>
-                2. Experience in designing a Terraform and deploying it in cloud deployment manager to spin up resources like cloud virtual networks, Compute Engines in public 
-                and private subnets along with AutoScaler in Google Cloud Platform. <br>
-                3. Set up a GCP Firewall rules in order to allow or deny traffic to and from the VM's instances based on specified configuration and used GCP cloud CDN (content 
-                delivery network) to deliver content from GCP cache locations drastically improving user experience and latency. <br>
-                4. Experience in providing highly available and fault tolerant applications utilizing orchestration technologies like Kubernetes and Apache Mesos on Google Cloud 
-                Platform. <br>
-                5. Experience in Blue/green deployment strategy by creating new applications which are identical to the existing production environment using CloudFormation 
-                templates & Route53 weighted record sets to redirect traffic from the old environment to the pristine environment via DNS.
+                1. Claims & Returns: Processed customer returns and exchanges efficiently while following store policies<br>
+                2. Refunds: Handled refund requests accurately with proper documentation and adherence to guidelines<br>
+                3. Cashier Duties: Operated cash registers and processed various payment transactions<br>
+                4. Self-Checkout Assistance: Monitored stations and assisted customers with transactions<br>
+                5. Customer Support: Addressed concerns and provided assistance with store policies and products<br>
+                6. Store Maintenance: Maintained checkout area organization and followed safety protocols
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">DevOps Engineer</h4>
-              <h7 class="h4 timeline-item-title">IbexLabs</h7>
+              <h4 class="h4 timeline-item-title">Material Handler</h4>
+              <h7 class="h4 timeline-item-title">SucroCan Canada, Hamilton</h7>
 
-              <span>Nov 2021 — December 2021</span>
-
-              <p class="timeline-text">
-                1. Working on Ansible scripts to install Cloudwatch agent on EC2 instances and monitor metrics like Volumeusage, memoryusage and CPUusage. <br>
-                2. Setting up multiple environment variables input on GitHub to deploy images to ECR.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DevOps Engineer</h4>
-              <h7 class="h4 timeline-item-title">TwimBit</h7>
-
-              <span>Sept 2021 — Oct 2021</span>
+              <span>2023</span>
 
               <p class="timeline-text">
-                1. Setup CloudFront along with Application Load Balancers for ECS. <br>
-                2. Setup Task definitions for a Caddy server and static website. <br>
-                3. Write Nginx configuration to reverse proxy traffic within the cluster and to serve SSL certificate on the go with the help of OpenResty Framework. <br>
-                4. Managing the entire infrastructure using terraform. Setup Lambda function for database failover and automate the process using step functions. <br>
-                5. Setup A records and CNAME in Route 53.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DevOps Engineer</h4>
-              <h7 class="h4 timeline-item-title">Neudesic</h7>
-
-              <span>March 2021 — Aug 2021</span>
-
-              <p class="timeline-text">
-                1. Created a Windows server image using Hashicorp Packer. <br>
-                2. Deploys the Packer image on Azure Virtual Machine Scale Set using Terraform. <br>
-                3. Manages a GKE cluster using Terraform <br>
-                4. Sets up Load Balancer for the Kubernetes cluster <br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DevOps Intern</h4>
-              <h7 class="h4 timeline-item-title">Tivona Global</h7>
-
-              <span>Oct 2020 — Feb 2021</span>
-
-              <p class="timeline-text">
-                1. Continuous deployment automation using bash scripting. <br>
-                2. Automated AWS cloud deployment using Terraform from scratch. <br>
-                3. Implemented terraform functions on Terraform cloud. <br>
-                4. Implemented sentinel policies on Terraform cloud.<br>
-                5. Using dynamic blocks to dynamically create multiple resources of block within a resource from a complex value such as a list of map. <br>
-                6. Create IAM policies for users and attach them to an IAM group. <br>
-                7. Lambda function to attach the IAM policy to an IAM user and save the CloudTrail logs for IAM user in DynamoDB, using Boto. <br>
+                1. Load, unload, and move raw materials, finished products, and packaging materials within the facility<br>
+                2. Operate forklifts, pallet jacks, and other material-handling equipment safely and efficiently<br>
+                3. Ensure accurate inventory tracking by scanning and documenting incoming and outgoing shipments<br>
+                4. Assist in warehouse organization, keeping storage areas clean and properly maintained<br>
+                5. Follow safety guidelines and company procedures to prevent workplace hazards<br>
+                6. Support production lines by supplying necessary materials in a timely manner
               </p>
 
             </li>
@@ -845,7 +510,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Cloud Engineer</h5>
+                <h5 class="h5">Security Analysis</h5>
                 <data value="90">90%</data>
               </div>
 
@@ -858,12 +523,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
+                <h5 class="h5">Network Security</h5>
+                <data value="85">85%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
 
             </li>
@@ -871,7 +536,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
+                <h5 class="h5">Incident Response</h5>
                 <data value="80">80%</data>
               </div>
 
@@ -884,12 +549,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Product Management</h5>
-                <data value="70">70%</data>
+                <h5 class="h5">Technical Skills</h5>
+                <data value="85">85%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
 
             </li>
@@ -917,415 +582,71 @@
         <section class="projects">
 
           <ul class="filter-list">
-
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn>Projects</button>
             </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Cloud Projects</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Product</button>
-            </li>
-
-
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
+              <div class="select-value" data-selecct-value>Projects</div>
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
 
             <ul class="select-list">
-
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item>Projects</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Cloud Projects</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Product</button>
-              </li>
-
-
             </ul>
-
           </div>
 
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="cloud projects">
+            <li class="project-item active" data-filter-item data-category="projects">
               <a href="#" onclick="openModal('project-1')">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project1.png" alt="finance" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">IAM policy assigning automation</h3>
-
-                <p class="project-category">Cloud Projects</p>
-
+                <p class="project-category">Red Team Report</p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="cloud projects">
+            <li class="project-item active" data-filter-item data-category="projects">
               <a href="#" onclick="openModal('project-2')">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-2.jpeg" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project2.png" alt="orizon" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Postgres Container Setup</h3>
-
-                <p class="project-category">Cloud Projects</p>
-
+                <h3 class="project-title">Sigma</h3>
+                <p class="project-category">Red Team Report</p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="cloud projects">
+            <li class="project-item active" data-filter-item data-category="projects">
               <a href="#" onclick="openModal('project-3')">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project3.png" alt="fundo" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Route53 DNS Setup</h3>
-
-                <p class="project-category">Cloud Projects</p>
-
+                <h3 class="project-title">Defence by Offense</h3>
+                <p class="project-category">Blue Team Report</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="product">
-              <a href="#" onclick="openModal('project-4')">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Product</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="cloud projects">
-              <a href="#" onclick="openModal('project-5')">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Cross region s3 replication</h3>
-
-                <p class="project-category">Cloud Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="cloud projects">
-              <a href="#" onclick="openModal('project-6')">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">VPC flow logs querying with S3 and SQS.</h3>
-
-                <p class="project-category">Cloud Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="cloud projects">
-              <a href="#" onclick="openModal('project-7')">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Multi-stage iOS application deployment</h3>
-
-                <p class="project-category">Cloud Projects</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="product">
-              <a href="#" onclick="openModal('project-8')">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Product</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="cloud projects">
-              <a href="#" onclick="openModal('project-9')">
-
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Serverless Disaster recovery Failover for MySQL database </h3>
-
-                <p class="project-category">Cloud Projects</p>
-
-              </a>
-            </li>
-
           </ul>
 
         </section>
 
       </article>
 
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Feb 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
 
 
 
@@ -1343,7 +664,7 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Gachibowli&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=252+Gravel+ridge+trail+Kitchener+ON&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
@@ -1352,8 +673,8 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formsubmit.co/pranaysparihar@gmail.com" method="POST" class="form" data-form>
-          <!-- <form action="mailto:pranaysparihar@gmail.com" method = "POST" class="form" data-form> -->
+          <form action="https://formsubmit.co/shreejisp24@gmail.com" method="POST" class="form" data-form>
+          <!-- <form action="mailto:shreejisp24@gmail.com" method = "POST" class="form" data-form> -->
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>

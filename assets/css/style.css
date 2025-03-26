@@ -208,10 +208,15 @@ article {
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
-article { display: none; }
+article { 
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
 article.active {
   display: block;
+  opacity: 1;
   animation: fade 0.5s ease backwards;
 }
 
@@ -1024,6 +1029,54 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+.project-pdf-btn {
+  background-color: var(--orange-yellow-crayola);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.project-pdf-btn:hover {
+  background-color: var(--vegas-gold);
+  transform: translateY(-2px);
+}
+
+.pdf-details {
+  background-color: var(--light-gray);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.pdf-details h4 {
+  color: var(--jet);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.pdf-details p {
+  color: var(--jet);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.pdf-details ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.pdf-details li {
+  color: var(--jet);
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 

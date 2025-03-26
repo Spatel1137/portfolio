@@ -1,0 +1,210 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'mulish', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+li{
+    font-size: larger;
+    padding: 7px;
+}
+.name{
+    font-family: 'mulish';
+    color: #7a5cff;
+}
+.landing{
+    padding: 25px;
+    display: flex;
+}
+
+i{
+    font-size: 50px;
+    padding: 20px;
+}
+
+progress{
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: flex-start;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-heading{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.text{
+    text-align: left !important;
+}
+
+.card{
+    border: 1px solid #fff;
+    padding: 15px !important;
+    border-radius: 7px;
+    margin: 10px;
+    flex: 1;
+}
+
+.card:hover{
+    border: 1px solid #7a5cff !important;
+    box-shadow: 1px 1px 1px 1px #7a5cff;
+}
+
+.container-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Ensures flexibility for small screens */
+    gap: 20px; /* Space between columns/rows */
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex: 1; /* Allows the columns to have equal width */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-heading{
+    color: #7a5cff;
+}
+
+.text-contrast{
+    color: #A0153E !important;
+}
+
+.hero-image .yellow-bg {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 350px;
+    height: 350px;
+    background: #ffc400;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.heading{
+    font-family: syne; text-align: center; font-size: 50px; margin-top: 20px; margin-bottom: 20px;
+}
+
+.card-decoration{
+    text-align: left; border: 1px solid #a4a4a4; border-radius: 7px; padding-bottom: 10px;
+}
+
+/* Two-Column Layout for Desktop */
+@media (min-width: 768px) {
+    .container-main {
+        flex-wrap: nowrap; /* No wrapping for columns on large screens */
+    }
+
+    .column {
+        flex: 0 0 48%; /* Each column takes 48% of the container width */
+    }
+}
+
+@media (max-width : 600px) {
+
+  
+    .hero-text > h1{
+        font-size: 75px !important;
+    }
+
+    .hero-text > p{
+        font-size: 25px !important;
+    }
+
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+
+    .container{
+        flex-direction: column !important;
+    }
+
+    .card{
+        flex-direction: column !important;
+        text-align: center !important;
+        margin: 10px;
+    }
+
+    .text{
+        text-align: center !important;
+    }
+
+    .row{
+        flex-direction: column !important;
+    }
+
+}
+
+/* Header Section */
+header {
+    background: transparent;
+    position: relative;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #7a5cff;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #7a5cff;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background: #7a5cff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
